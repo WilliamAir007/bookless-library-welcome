@@ -99,7 +99,7 @@ function Index() {
 
           {/* CTA — Bookless.id */}
           <a
-            href="https://bookless.id"
+            href="http://bookless.id"
             target="_blank"
             rel="noopener noreferrer"
             className="group relative flex flex-col justify-between overflow-hidden rounded-3xl bg-primary p-6 text-primary-foreground shadow-[var(--shadow-soft)] transition-all hover:shadow-[var(--shadow-lifted)] hover:-translate-y-0.5 md:col-span-2"

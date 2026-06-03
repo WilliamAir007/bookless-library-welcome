@@ -132,15 +132,8 @@ function Index() {
               <ArrowUpRight className="h-5 w-5 text-muted-foreground transition-all group-hover:translate-x-1 group-hover:-translate-y-1 group-hover:text-foreground" />
             </div>
             <div className="mt-10">
-              <p className="text-[11px] font-medium uppercase tracking-[0.2em] text-muted-foreground">
-                Sudah Punya Akun?
-              </p>
-              <p className="mt-2 text-2xl font-semibold leading-tight tracking-tight sm:text-3xl">
-                Masuk ke<br />
-                <span className="italic text-primary">Akun Anda</span>
-              </p>
-              <p className="mt-3 text-sm text-muted-foreground">
-                Lanjutkan perjalanan membaca Anda.
+              <p className="text-2xl font-semibold leading-tight tracking-tight sm:text-3xl">
+                Mau mengakses Bookless Library / Internet?
               </p>
             </div>
           </Link>

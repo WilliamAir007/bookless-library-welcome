@@ -1,5 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowUpRight, BookOpen, Sparkles, Moon, LogIn } from "lucide-react";
+import libraryBg from "@/assets/library-bg.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -23,18 +24,21 @@ export const Route = createFileRoute("/")({
 function Index() {
   return (
     <main className="relative min-h-screen overflow-hidden bg-background text-foreground">
-      {/* Ambient backdrop */}
-      <div className="pointer-events-none absolute inset-0 -z-10">
-        <div className="absolute -top-40 -left-40 h-[36rem] w-[36rem] rounded-full bg-accent/40 blur-3xl" />
-        <div className="absolute -bottom-40 -right-40 h-[36rem] w-[36rem] rounded-full bg-primary/15 blur-3xl" />
-        <div
-          className="absolute inset-0 opacity-[0.04]"
-          style={{
-            backgroundImage:
-              "radial-gradient(circle at 1px 1px, currentColor 1px, transparent 0)",
-            backgroundSize: "28px 28px",
-          }}
+      {/* Background: library shelves */}
+      <div className="pointer-events-none absolute inset-0 -z-20">
+        <img
+          src={libraryBg}
+          alt=""
+          className="h-full w-full object-cover"
+          style={{ filter: "brightness(0.55) saturate(0.6)" }}
         />
+      </div>
+
+      {/* Ambient overlay */}
+      <div className="pointer-events-none absolute inset-0 -z-10">
+        <div className="absolute -top-40 -left-40 h-[36rem] w-[36rem] rounded-full bg-accent/30 blur-3xl" />
+        <div className="absolute -bottom-40 -right-40 h-[36rem] w-[36rem] rounded-full bg-primary/10 blur-3xl" />
+        <div className="absolute inset-0 bg-background/60" />
       </div>
 
       <div className="mx-auto flex min-h-screen max-w-6xl flex-col px-5 py-8 sm:px-8 sm:py-12">

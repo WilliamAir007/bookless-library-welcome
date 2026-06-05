@@ -150,13 +150,11 @@ function Index() {
             <div className="flex flex-col items-start justify-between gap-4 sm:flex-row sm:items-center">
               <div className="flex items-center gap-4">
                 <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-2xl bg-accent/60 text-foreground">
-                  <BookOpen className="h-4 w-4" />
+                  <MessageCircle className="h-4 w-4" />
                 </div>
                 <p className="text-[15px] leading-relaxed text-foreground">
-                  <span className="italic text-muted-foreground">
-                    “Bacalah, dengan nama Tuhanmu yang menciptakan.”
-                  </span>{" "}
-                  <span className="text-xs text-muted-foreground">— QS. Al-‘Alaq: 1</span>
+                  Jika ada pesan silahkan hubungi{" "}
+                  <span className="font-semibold text-primary">CS kami</span>.
                 </p>
               </div>
               <span className="text-[11px] font-medium uppercase tracking-[0.2em] text-muted-foreground">

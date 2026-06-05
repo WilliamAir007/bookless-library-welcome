@@ -182,6 +182,8 @@ function LoginPage() {
                 </div>
               </div>
 
+              {error && <p className="text-xs font-medium text-destructive">{error}</p>}
+
               <button
                 type="submit"
                 disabled={submitting}
@@ -193,14 +195,12 @@ function LoginPage() {
 
               <p className="pt-2 text-center text-xs text-muted-foreground">
                 Belum punya akun?{" "}
-                <a
-                  href="https://bookless.id"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <Link
+                  to="/register"
                   className="font-medium text-foreground underline-offset-4 hover:underline"
                 >
-                  Daftar di bookless.id
-                </a>
+                  Daftar / Register
+                </Link>
               </p>
             </form>
           </div>

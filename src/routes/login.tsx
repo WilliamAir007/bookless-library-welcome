@@ -209,7 +209,7 @@ export function AuthShell({
         {/* Arched form panel — masjid door silhouette */}
         <div className="relative mt-10">
           {/* Crescent + star finial — perched at the very top of the outer arch */}
-          <MasjidFinial className="absolute left-1/2 top-0 z-10 h-16 w-16 -translate-x-1/2 -translate-y-full text-primary" />
+          <MasjidFinial className="absolute left-1/2 top-0 z-10 h-11 w-11 -translate-x-1/2 -translate-y-[85%] text-primary" />
 
           <div
             className="relative overflow-hidden border border-border/80 bg-card/80 px-5 pb-7 pt-10 shadow-[var(--shadow-soft)] backdrop-blur-sm sm:px-7"

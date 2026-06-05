@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { ArrowUpRight, BookOpen, Sparkles, Moon, LogIn } from "lucide-react";
+import { ArrowUpRight, BookOpen, Sparkles, Moon, LogIn, Wifi, MessageCircle } from "lucide-react";
 import libraryBg from "@/assets/library-bg.jpg";
 
 export const Route = createFileRoute("/")({
@@ -85,14 +85,18 @@ function Index() {
               </p>
 
               <h1 className="mt-10 text-5xl font-semibold leading-[0.95] tracking-tight text-foreground sm:text-7xl">
-                Ahlan Wa
+                Selamat Datang di
                 <br />
-                <span className="italic text-primary/90">Sahlan.</span>
+                <span className="italic text-primary/90">Kampung IT Solo.</span>
               </h1>
 
               <p className="mt-6 max-w-md text-[15px] leading-relaxed text-muted-foreground">
-                Selamat datang di Bookless Library — ruang membaca tanpa batas.
-                Mari menjelajah, belajar, dan tumbuh bersama dalam ketenangan.
+                Lab. Penelitian IT untuk Pendidikan dan Peradaban.
+                <br />
+                <br />
+                Kami menyediakan akses ke berbagai fasilitas kami. Untuk bisa
+                akses ke fasilitas tersebut silahkan daftar atau isi buku tamu
+                digital pada barcode yang berada di depan anda.
               </p>
             </div>
           </article>
@@ -114,7 +118,7 @@ function Index() {
             </div>
             <div className="mt-10">
               <p className="text-2xl font-semibold leading-tight tracking-tight sm:text-3xl">
-                Mau mengakses Bookless Library?
+                Elfan Bookless Library
               </p>
             </div>
           </a>
@@ -131,9 +135,12 @@ function Index() {
               </span>
               <ArrowUpRight className="h-5 w-5 text-muted-foreground transition-all group-hover:translate-x-1 group-hover:-translate-y-1 group-hover:text-foreground" />
             </div>
-            <div className="mt-10">
+            <div className="mt-6 flex h-14 w-14 items-center justify-center rounded-2xl border border-dashed border-primary/40 bg-primary/5 text-primary">
+              <Wifi className="h-7 w-7" strokeWidth={2} />
+            </div>
+            <div className="mt-6">
               <p className="text-2xl font-semibold leading-tight tracking-tight sm:text-3xl">
-                Mau mengakses Bookless Library / Internet?
+                Akses Free Internet
               </p>
             </div>
           </Link>
@@ -143,13 +150,11 @@ function Index() {
             <div className="flex flex-col items-start justify-between gap-4 sm:flex-row sm:items-center">
               <div className="flex items-center gap-4">
                 <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-2xl bg-accent/60 text-foreground">
-                  <BookOpen className="h-4 w-4" />
+                  <MessageCircle className="h-4 w-4" />
                 </div>
                 <p className="text-[15px] leading-relaxed text-foreground">
-                  <span className="italic text-muted-foreground">
-                    “Bacalah, dengan nama Tuhanmu yang menciptakan.”
-                  </span>{" "}
-                  <span className="text-xs text-muted-foreground">— QS. Al-‘Alaq: 1</span>
+                  Jika ada pesan silahkan hubungi{" "}
+                  <span className="font-semibold text-primary">CS kami</span>.
                 </p>
               </div>
               <span className="text-[11px] font-medium uppercase tracking-[0.2em] text-muted-foreground">

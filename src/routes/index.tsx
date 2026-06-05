@@ -135,9 +135,12 @@ function Index() {
               </span>
               <ArrowUpRight className="h-5 w-5 text-muted-foreground transition-all group-hover:translate-x-1 group-hover:-translate-y-1 group-hover:text-foreground" />
             </div>
-            <div className="mt-10">
+            <div className="mt-6 flex h-14 w-14 items-center justify-center rounded-2xl border border-dashed border-primary/40 bg-primary/5 text-primary">
+              <Wifi className="h-7 w-7" strokeWidth={2} />
+            </div>
+            <div className="mt-6">
               <p className="text-2xl font-semibold leading-tight tracking-tight sm:text-3xl">
-                Mau mengakses Bookless Library / Internet?
+                Akses Free Internet
               </p>
             </div>
           </Link>

@@ -85,14 +85,18 @@ function Index() {
               </p>
 
               <h1 className="mt-10 text-5xl font-semibold leading-[0.95] tracking-tight text-foreground sm:text-7xl">
-                Ahlan Wa
+                Selamat Datang di
                 <br />
-                <span className="italic text-primary/90">Sahlan.</span>
+                <span className="italic text-primary/90">Kampung IT Solo.</span>
               </h1>
 
               <p className="mt-6 max-w-md text-[15px] leading-relaxed text-muted-foreground">
-                Selamat datang di Bookless Library — ruang membaca tanpa batas.
-                Mari menjelajah, belajar, dan tumbuh bersama dalam ketenangan.
+                Lab. Penelitian IT untuk Pendidikan dan Peradaban.
+                <br />
+                <br />
+                Kami menyediakan akses ke berbagai fasilitas kami. Untuk bisa
+                akses ke fasilitas tersebut silahkan daftar atau isi buku tamu
+                digital pada barcode yang berada di depan anda.
               </p>
             </div>
           </article>

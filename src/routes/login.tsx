@@ -208,11 +208,11 @@ export function AuthShell({
 
         {/* Arched form panel — masjid door silhouette */}
         <div className="relative mt-10">
-          {/* Crescent + star finial */}
-          <MasjidFinial className="absolute left-1/2 top-0 z-10 h-12 w-12 -translate-x-1/2 -translate-y-[55%] text-primary" />
+          {/* Crescent + star finial — perched at the very top of the outer arch */}
+          <MasjidFinial className="absolute left-1/2 top-0 z-10 h-16 w-16 -translate-x-1/2 -translate-y-full text-primary" />
 
           <div
-            className="relative overflow-hidden border border-border/80 bg-card/80 px-5 pb-7 pt-12 shadow-[var(--shadow-soft)] backdrop-blur-sm sm:px-7"
+            className="relative overflow-hidden border border-border/80 bg-card/80 px-5 pb-7 pt-10 shadow-[var(--shadow-soft)] backdrop-blur-sm sm:px-7"
             style={{
               borderTopLeftRadius: "9999px",
               borderTopRightRadius: "9999px",
@@ -231,17 +231,6 @@ export function AuthShell({
                 borderBottomRightRadius: "1.25rem",
               }}
             />
-            {/* Small ornament inside arch */}
-            <div className="relative mb-6 flex justify-center">
-              <span
-                className="text-2xl text-primary/40"
-                style={{ fontFamily: "var(--font-arabic)" }}
-                dir="rtl"
-                lang="ar"
-              >
-                ﷽
-              </span>
-            </div>
 
             {banner}
             <div className="relative">{children}</div>

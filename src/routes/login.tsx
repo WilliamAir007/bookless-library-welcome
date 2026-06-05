@@ -75,7 +75,7 @@ function LoginPage() {
             required
             value={username}
             onChange={(e) => setUsername(e.target.value)}
-            className="h-13 w-full rounded-2xl border border-border bg-background/70 pl-11 pr-4 py-3.5 text-sm outline-none transition focus:border-primary focus:ring-4 focus:ring-primary/10"
+            className="h-13 w-full rounded-2xl border border-border bg-background/70 pl-11 pr-4 py-3.5 text-center text-sm outline-none transition focus:border-primary focus:ring-4 focus:ring-primary/10"
             placeholder="nama_pengguna"
           />
         </FieldShell>
@@ -88,7 +88,7 @@ function LoginPage() {
             required
             value={password}
             onChange={(e) => setPassword(e.target.value)}
-            className="h-13 w-full rounded-2xl border border-border bg-background/70 pl-11 pr-12 py-3.5 text-sm outline-none transition focus:border-primary focus:ring-4 focus:ring-primary/10"
+            className="h-13 w-full rounded-2xl border border-border bg-background/70 pl-11 pr-12 py-3.5 text-center text-sm outline-none transition focus:border-primary focus:ring-4 focus:ring-primary/10"
             placeholder="••••••••"
           />
           <button
@@ -209,7 +209,7 @@ export function AuthShell({
         {/* Arched form panel — masjid door silhouette */}
         <div className="relative mt-10">
           {/* Crescent + star finial — perched at the very top of the outer arch */}
-          <MasjidFinial className="absolute left-1/2 top-0 z-10 h-16 w-16 -translate-x-1/2 -translate-y-full text-primary" />
+          <MasjidFinial className="absolute left-1/2 top-0 z-10 h-11 w-11 -translate-x-1/2 -translate-y-[85%] text-primary" />
 
           <div
             className="relative overflow-hidden border border-border/80 bg-card/80 px-5 pb-7 pt-10 shadow-[var(--shadow-soft)] backdrop-blur-sm sm:px-7"

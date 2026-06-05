@@ -207,12 +207,12 @@ export function AuthShell({
         </div>
 
         {/* Arched form panel — masjid door silhouette */}
-        <div className="relative mt-10">
+        <div className="relative mt-16">
           {/* Crescent + star finial — perched at the very top of the outer arch */}
-          <MasjidFinial className="absolute left-1/2 top-0 z-10 h-11 w-11 -translate-x-1/2 -translate-y-[85%] text-primary" />
+          <MasjidFinial className="absolute left-1/2 top-0 z-10 h-11 w-11 -translate-x-1/2 -translate-y-[90%] text-primary" />
 
           <div
-            className="relative overflow-hidden border border-border/80 bg-card/80 px-5 pb-7 pt-10 shadow-[var(--shadow-soft)] backdrop-blur-sm sm:px-7"
+            className="relative overflow-hidden border border-border/80 bg-card/80 px-7 pb-8 pt-14 shadow-[var(--shadow-soft)] backdrop-blur-sm sm:px-9"
             style={{
               borderTopLeftRadius: "9999px",
               borderTopRightRadius: "9999px",
@@ -223,7 +223,7 @@ export function AuthShell({
             {/* Inner arch outline */}
             <div
               aria-hidden
-              className="pointer-events-none absolute inset-x-4 top-4 bottom-4 border border-primary/15"
+              className="pointer-events-none absolute inset-x-5 top-5 bottom-5 border border-primary/15"
               style={{
                 borderTopLeftRadius: "9999px",
                 borderTopRightRadius: "9999px",

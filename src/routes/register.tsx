@@ -99,7 +99,7 @@ function RegisterPage() {
             required
             value={fullName}
             onChange={(e) => setFullName(e.target.value)}
-            className="h-13 w-full rounded-2xl border border-border bg-background/70 pl-11 pr-4 py-3.5 text-sm outline-none transition focus:border-primary focus:ring-4 focus:ring-primary/10"
+            className="h-13 w-full rounded-2xl border border-border bg-background/70 pl-11 pr-4 py-3.5 text-center text-sm outline-none transition focus:border-primary focus:ring-4 focus:ring-primary/10"
             placeholder="Nama lengkap Anda"
           />
         </FieldShell>
@@ -111,7 +111,7 @@ function RegisterPage() {
             required
             value={username}
             onChange={(e) => setUsername(e.target.value)}
-            className="h-13 w-full rounded-2xl border border-border bg-background/70 pl-11 pr-4 py-3.5 text-sm outline-none transition focus:border-primary focus:ring-4 focus:ring-primary/10"
+            className="h-13 w-full rounded-2xl border border-border bg-background/70 pl-11 pr-4 py-3.5 text-center text-sm outline-none transition focus:border-primary focus:ring-4 focus:ring-primary/10"
             placeholder="nama_pengguna"
           />
         </FieldShell>
@@ -140,7 +140,7 @@ function RegisterPage() {
               required
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              className="h-13 w-full rounded-2xl border border-border bg-background/70 pl-11 pr-12 py-3.5 text-sm outline-none transition focus:border-primary focus:ring-4 focus:ring-primary/10"
+              className="h-13 w-full rounded-2xl border border-border bg-background/70 pl-11 pr-12 py-3.5 text-center text-sm outline-none transition focus:border-primary focus:ring-4 focus:ring-primary/10"
               placeholder="••••••••"
             />
             <button
@@ -167,7 +167,7 @@ function RegisterPage() {
             required
             value={confirm}
             onChange={(e) => setConfirm(e.target.value)}
-            className="h-13 w-full rounded-2xl border border-border bg-background/70 pl-11 pr-4 py-3.5 text-sm outline-none transition focus:border-primary focus:ring-4 focus:ring-primary/10"
+            className="h-13 w-full rounded-2xl border border-border bg-background/70 pl-11 pr-4 py-3.5 text-center text-sm outline-none transition focus:border-primary focus:ring-4 focus:ring-primary/10"
             placeholder="Ulangi password"
           />
         </FieldShell>

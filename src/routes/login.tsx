@@ -123,6 +123,11 @@ function LoginPage() {
             <p className="mt-4 text-[15px] text-muted-foreground">
               Gunakan kredensial Bookless Library Anda untuk melanjutkan.
             </p>
+            {justRegistered && (
+              <p className="mt-4 rounded-xl border border-primary/30 bg-primary/10 px-4 py-2.5 text-xs font-medium text-primary">
+                Akun berhasil dibuat. Silakan masuk dengan kredensial Anda.
+              </p>
+            )}
 
             <form onSubmit={handleSubmit} className="mt-10 space-y-5">
               <div className="space-y-2">

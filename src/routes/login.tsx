@@ -17,11 +17,30 @@ function LoginPage() {
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
   const [submitting, setSubmitting] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+  const justRegistered = typeof window !== "undefined" && new URLSearchParams(window.location.search).get("registered") === "1";
 
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
+    setError(null);
     setSubmitting(true);
-    setTimeout(() => setSubmitting(false), 600);
+    try {
+      const raw = typeof window !== "undefined" ? localStorage.getItem("bookless_account") : null;
+      if (!raw) {
+        setError("Akun belum terdaftar. Silakan daftar terlebih dahulu.");
+        return;
+      }
+      const acc = JSON.parse(raw) as { username: string; password: string };
+      if (acc.username !== username.trim() || acc.password !== password) {
+        setError("Username atau password salah.");
+        return;
+      }
+      window.location.href = "https://www.google.com";
+    } catch {
+      setError("Terjadi kesalahan. Coba lagi.");
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   return (

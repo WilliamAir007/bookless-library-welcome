@@ -118,7 +118,7 @@ function Index() {
             </div>
             <div className="mt-10">
               <p className="text-2xl font-semibold leading-tight tracking-tight sm:text-3xl">
-                Mau mengakses Bookless Library?
+                Elfan Bookless Library
               </p>
             </div>
           </a>

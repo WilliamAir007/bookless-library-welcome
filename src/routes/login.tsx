@@ -17,11 +17,30 @@ function LoginPage() {
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
   const [submitting, setSubmitting] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+  const justRegistered = typeof window !== "undefined" && new URLSearchParams(window.location.search).get("registered") === "1";
 
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
+    setError(null);
     setSubmitting(true);
-    setTimeout(() => setSubmitting(false), 600);
+    try {
+      const raw = typeof window !== "undefined" ? localStorage.getItem("bookless_account") : null;
+      if (!raw) {
+        setError("Akun belum terdaftar. Silakan daftar terlebih dahulu.");
+        return;
+      }
+      const acc = JSON.parse(raw) as { username: string; password: string };
+      if (acc.username !== username.trim() || acc.password !== password) {
+        setError("Username atau password salah.");
+        return;
+      }
+      window.location.href = "https://www.google.com";
+    } catch {
+      setError("Terjadi kesalahan. Coba lagi.");
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   return (
@@ -104,6 +123,11 @@ function LoginPage() {
             <p className="mt-4 text-[15px] text-muted-foreground">
               Gunakan kredensial Bookless Library Anda untuk melanjutkan.
             </p>
+            {justRegistered && (
+              <p className="mt-4 rounded-xl border border-primary/30 bg-primary/10 px-4 py-2.5 text-xs font-medium text-primary">
+                Akun berhasil dibuat. Silakan masuk dengan kredensial Anda.
+              </p>
+            )}
 
             <form onSubmit={handleSubmit} className="mt-10 space-y-5">
               <div className="space-y-2">
@@ -158,6 +182,8 @@ function LoginPage() {
                 </div>
               </div>
 
+              {error && <p className="text-xs font-medium text-destructive">{error}</p>}
+
               <button
                 type="submit"
                 disabled={submitting}
@@ -169,14 +195,12 @@ function LoginPage() {
 
               <p className="pt-2 text-center text-xs text-muted-foreground">
                 Belum punya akun?{" "}
-                <a
-                  href="https://bookless.id"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <Link
+                  to="/register"
                   className="font-medium text-foreground underline-offset-4 hover:underline"
                 >
-                  Daftar di bookless.id
-                </a>
+                  Daftar / Register
+                </Link>
               </p>
             </form>
           </div>

@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { ArrowUpRight, BookOpen, Sparkles, Moon, LogIn } from "lucide-react";
+import { ArrowUpRight, BookOpen, Sparkles, Moon, LogIn, Wifi, MessageCircle } from "lucide-react";
 import libraryBg from "@/assets/library-bg.jpg";
 
 export const Route = createFileRoute("/")({

@@ -117,17 +117,17 @@ function RegisterPage() {
         </FieldShell>
 
         <div className="space-y-2">
-          <div className="flex items-center justify-between">
+          <div className="relative flex items-center justify-center">
             <label
               htmlFor="password"
-              className="text-[11px] font-semibold uppercase tracking-[0.18em] text-muted-foreground"
+              className="text-center text-[11px] font-semibold uppercase tracking-[0.18em] text-muted-foreground"
             >
               Password
             </label>
             <button
               type="button"
               onClick={handleSuggest}
-              className="inline-flex items-center gap-1 text-[11px] font-semibold uppercase tracking-[0.15em] text-primary transition hover:opacity-80"
+              className="absolute right-0 inline-flex items-center gap-1 text-[11px] font-semibold uppercase tracking-[0.15em] text-primary transition hover:opacity-80"
             >
               <Sparkles className="h-3 w-3" /> Sarankan
             </button>

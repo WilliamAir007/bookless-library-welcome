@@ -260,7 +260,7 @@ export function FieldShell({
     <div className="space-y-2">
       <label
         htmlFor={id}
-        className="text-[11px] font-semibold uppercase tracking-[0.18em] text-muted-foreground"
+        className="block text-center text-[11px] font-semibold uppercase tracking-[0.18em] text-muted-foreground"
       >
         {label}
       </label>
